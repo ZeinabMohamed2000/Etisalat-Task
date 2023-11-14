@@ -9,11 +9,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    let names = ["Zeinab" , "Salma" , "Habiba" , "Aya" , "Sara" , "Fatma" , "Omar"]
+    var searchedNames : [String]?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        searchBar.delegate = self
+        searchBar.layer.cornerRadius = 10
     }
 
 
+}
+
+extension ViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        searchedNames = []
+        if searchText == "" {
+            searchedNames = names
+        }
+        
+        for letter in names {
+            if letter.uppercased().contains(searchText.uppercased()) {
+                searchedNames?.append(letter)
+            }
+        }
+    }
 }
 
