@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D2DD1D62B042295008D0389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1D52B042295008D0389 /* AppDelegate.swift */; };
+		3D2DD1D82B042295008D0389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1D72B042295008D0389 /* SceneDelegate.swift */; };
+		3D2DD1DA2B042295008D0389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1D92B042295008D0389 /* ViewController.swift */; };
+		3D2DD1DD2B042295008D0389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DD1DB2B042295008D0389 /* Main.storyboard */; };
+		3D2DD1E02B042295008D0389 /* Etisalat_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1DE2B042295008D0389 /* Etisalat_Task.xcdatamodeld */; };
+		3D2DD1E22B042297008D0389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DD1E12B042297008D0389 /* Assets.xcassets */; };
+		3D2DD1E52B042297008D0389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DD1E32B042297008D0389 /* LaunchScreen.storyboard */; };
+		3D2DD1F02B042298008D0389 /* Etisalat_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1EF2B042298008D0389 /* Etisalat_TaskTests.swift */; };
+		3D2DD1FA2B042298008D0389 /* Etisalat_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1F92B042298008D0389 /* Etisalat_TaskUITests.swift */; };
+		3D2DD1FC2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1FB2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D2DD1EC2B042298008D0389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2DD1CA2B042295008D0389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2DD1D12B042295008D0389;
+			remoteInfo = "Etisalat Task";
+		};
+		3D2DD1F62B042298008D0389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2DD1CA2B042295008D0389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2DD1D12B042295008D0389;
+			remoteInfo = "Etisalat Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D2DD1D22B042295008D0389 /* Etisalat Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Etisalat Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2DD1D52B042295008D0389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D2DD1D72B042295008D0389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D2DD1D92B042295008D0389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D2DD1DC2B042295008D0389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D2DD1DF2B042295008D0389 /* Etisalat_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Etisalat_Task.xcdatamodel; sourceTree = "<group>"; };
+		3D2DD1E12B042297008D0389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D2DD1E42B042297008D0389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D2DD1E62B042297008D0389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D2DD1EB2B042298008D0389 /* Etisalat TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Etisalat TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2DD1EF2B042298008D0389 /* Etisalat_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etisalat_TaskTests.swift; sourceTree = "<group>"; };
+		3D2DD1F52B042298008D0389 /* Etisalat TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Etisalat TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2DD1F92B042298008D0389 /* Etisalat_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etisalat_TaskUITests.swift; sourceTree = "<group>"; };
+		3D2DD1FB2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etisalat_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D2DD1CF2B042295008D0389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2DD1E82B042298008D0389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2DD1F22B042298008D0389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D2DD1C92B042295008D0389 = {
+			isa = PBXGroup;
+			children = (
+				3D2DD1D42B042295008D0389 /* Etisalat Task */,
+				3D2DD1EE2B042298008D0389 /* Etisalat TaskTests */,
+				3D2DD1F82B042298008D0389 /* Etisalat TaskUITests */,
+				3D2DD1D32B042295008D0389 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D2DD1D32B042295008D0389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D2DD1D22B042295008D0389 /* Etisalat Task.app */,
+				3D2DD1EB2B042298008D0389 /* Etisalat TaskTests.xctest */,
+				3D2DD1F52B042298008D0389 /* Etisalat TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D2DD1D42B042295008D0389 /* Etisalat Task */ = {
+			isa = PBXGroup;
+			children = (
+				3D2DD20B2B0422CB008D0389 /* Resources */,
+				3D2DD20A2B0422B8008D0389 /* Presentation */,
+				3D2DD2092B0422AA008D0389 /* Domain */,
+				3D2DD2082B0422A1008D0389 /* Data */,
+				3D2DD1DE2B042295008D0389 /* Etisalat_Task.xcdatamodeld */,
+			);
+			path = "Etisalat Task";
+			sourceTree = "<group>";
+		};
+		3D2DD1EE2B042298008D0389 /* Etisalat TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D2DD1EF2B042298008D0389 /* Etisalat_TaskTests.swift */,
+			);
+			path = "Etisalat TaskTests";
+			sourceTree = "<group>";
+		};
+		3D2DD1F82B042298008D0389 /* Etisalat TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D2DD1F92B042298008D0389 /* Etisalat_TaskUITests.swift */,
+				3D2DD1FB2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift */,
+			);
+			path = "Etisalat TaskUITests";
+			sourceTree = "<group>";
+		};
+		3D2DD2082B0422A1008D0389 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3D2DD2092B0422AA008D0389 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3D2DD20A2B0422B8008D0389 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3D2DD20D2B04250A008D0389 /* Views */,
+				3D2DD20C2B0424FC008D0389 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3D2DD20B2B0422CB008D0389 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D2DD1D52B042295008D0389 /* AppDelegate.swift */,
+				3D2DD1E12B042297008D0389 /* Assets.xcassets */,
+				3D2DD1D72B042295008D0389 /* SceneDelegate.swift */,
+				3D2DD1E62B042297008D0389 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D2DD20C2B0424FC008D0389 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D2DD20D2B04250A008D0389 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D2DD1D92B042295008D0389 /* ViewController.swift */,
+				3D2DD1E32B042297008D0389 /* LaunchScreen.storyboard */,
+				3D2DD1DB2B042295008D0389 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D2DD1D12B042295008D0389 /* Etisalat Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2DD1FF2B042298008D0389 /* Build configuration list for PBXNativeTarget "Etisalat Task" */;
+			buildPhases = (
+				3D2DD1CE2B042295008D0389 /* Sources */,
+				3D2DD1CF2B042295008D0389 /* Frameworks */,
+				3D2DD1D02B042295008D0389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Etisalat Task";
+			productName = "Etisalat Task";
+			productReference = 3D2DD1D22B042295008D0389 /* Etisalat Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D2DD1EA2B042298008D0389 /* Etisalat TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2DD2022B042298008D0389 /* Build configuration list for PBXNativeTarget "Etisalat TaskTests" */;
+			buildPhases = (
+				3D2DD1E72B042298008D0389 /* Sources */,
+				3D2DD1E82B042298008D0389 /* Frameworks */,
+				3D2DD1E92B042298008D0389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D2DD1ED2B042298008D0389 /* PBXTargetDependency */,
+			);
+			name = "Etisalat TaskTests";
+			productName = "Etisalat TaskTests";
+			productReference = 3D2DD1EB2B042298008D0389 /* Etisalat TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D2DD1F42B042298008D0389 /* Etisalat TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2DD2052B042298008D0389 /* Build configuration list for PBXNativeTarget "Etisalat TaskUITests" */;
+			buildPhases = (
+				3D2DD1F12B042298008D0389 /* Sources */,
+				3D2DD1F22B042298008D0389 /* Frameworks */,
+				3D2DD1F32B042298008D0389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D2DD1F72B042298008D0389 /* PBXTargetDependency */,
+			);
+			name = "Etisalat TaskUITests";
+			productName = "Etisalat TaskUITests";
+			productReference = 3D2DD1F52B042298008D0389 /* Etisalat TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D2DD1CA2B042295008D0389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3D2DD1D12B042295008D0389 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					3D2DD1EA2B042298008D0389 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3D2DD1D12B042295008D0389;
+					};
+					3D2DD1F42B042298008D0389 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3D2DD1D12B042295008D0389;
+					};
+				};
+			};
+			buildConfigurationList = 3D2DD1CD2B042295008D0389 /* Build configuration list for PBXProject "Etisalat Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D2DD1C92B042295008D0389;
+			productRefGroup = 3D2DD1D32B042295008D0389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D2DD1D12B042295008D0389 /* Etisalat Task */,
+				3D2DD1EA2B042298008D0389 /* Etisalat TaskTests */,
+				3D2DD1F42B042298008D0389 /* Etisalat TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D2DD1D02B042295008D0389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2DD1E52B042297008D0389 /* LaunchScreen.storyboard in Resources */,
+				3D2DD1E22B042297008D0389 /* Assets.xcassets in Resources */,
+				3D2DD1DD2B042295008D0389 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2DD1E92B042298008D0389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2DD1F32B042298008D0389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D2DD1CE2B042295008D0389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2DD1DA2B042295008D0389 /* ViewController.swift in Sources */,
+				3D2DD1D62B042295008D0389 /* AppDelegate.swift in Sources */,
+				3D2DD1D82B042295008D0389 /* SceneDelegate.swift in Sources */,
+				3D2DD1E02B042295008D0389 /* Etisalat_Task.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2DD1E72B042298008D0389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2DD1F02B042298008D0389 /* Etisalat_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2DD1F12B042298008D0389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2DD1FC2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift in Sources */,
+				3D2DD1FA2B042298008D0389 /* Etisalat_TaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D2DD1ED2B042298008D0389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D2DD1D12B042295008D0389 /* Etisalat Task */;
+			targetProxy = 3D2DD1EC2B042298008D0389 /* PBXContainerItemProxy */;
+		};
+		3D2DD1F72B042298008D0389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D2DD1D12B042295008D0389 /* Etisalat Task */;
+			targetProxy = 3D2DD1F62B042298008D0389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D2DD1DB2B042295008D0389 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D2DD1DC2B042295008D0389 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D2DD1E32B042297008D0389 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D2DD1E42B042297008D0389 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D2DD1FD2B042298008D0389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D2DD1FE2B042298008D0389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D2DD2002B042298008D0389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/zeinab/Desktop/Etisalat Task/Etisalat Task/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ITI.Etisalat-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D2DD2012B042298008D0389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/zeinab/Desktop/Etisalat Task/Etisalat Task/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ITI.Etisalat-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D2DD2032B042298008D0389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ITI.Etisalat-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Etisalat Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Etisalat Task";
+			};
+			name = Debug;
+		};
+		3D2DD2042B042298008D0389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ITI.Etisalat-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Etisalat Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Etisalat Task";
+			};
+			name = Release;
+		};
+		3D2DD2062B042298008D0389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ITI.Etisalat-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Etisalat Task";
+			};
+			name = Debug;
+		};
+		3D2DD2072B042298008D0389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ITI.Etisalat-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Etisalat Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D2DD1CD2B042295008D0389 /* Build configuration list for PBXProject "Etisalat Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2DD1FD2B042298008D0389 /* Debug */,
+				3D2DD1FE2B042298008D0389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2DD1FF2B042298008D0389 /* Build configuration list for PBXNativeTarget "Etisalat Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2DD2002B042298008D0389 /* Debug */,
+				3D2DD2012B042298008D0389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2DD2022B042298008D0389 /* Build configuration list for PBXNativeTarget "Etisalat TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2DD2032B042298008D0389 /* Debug */,
+				3D2DD2042B042298008D0389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2DD2052B042298008D0389 /* Build configuration list for PBXNativeTarget "Etisalat TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2DD2062B042298008D0389 /* Debug */,
+				3D2DD2072B042298008D0389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D2DD1DE2B042295008D0389 /* Etisalat_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D2DD1DF2B042295008D0389 /* Etisalat_Task.xcdatamodel */,
+			);
+			currentVersion = 3D2DD1DF2B042295008D0389 /* Etisalat_Task.xcdatamodel */;
+			path = Etisalat_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3D2DD1CA2B042295008D0389 /* Project object */;
+}
