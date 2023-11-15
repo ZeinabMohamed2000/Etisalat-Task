@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "SeriesCollectionViewCell", bundle: nil)
         seriesCollectionView.register(nib, forCellWithReuseIdentifier: "seriesCell")
         
-        seriesViewModel.getSeries()
+        seriesViewModel.getMoreSeries(offset: seriesViewModel.currentoffset, limit: seriesViewModel.itemsPerPage)
         seriesViewModel.bindingSeriesToController = {
             DispatchQueue.main.async {
                 self.seriesViewModel.seriesArr = self.seriesViewModel.retreivedSeries
@@ -55,9 +55,9 @@ extension ViewController: UISearchBarDelegate{
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfSections section: Int) -> Int {
-        return 1
-    }
+//    func collectionView(_ collectionView: UICollectionView, numberOfSections section: Int) -> Int {
+//        return 1
+//    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return seriesViewModel.searchedSeries?.count ?? 0
     }
@@ -72,6 +72,14 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         
         
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let lastItemIndex = collectionView.numberOfItems(inSection: 0) - 1
+        
+        if indexPath.item == lastItemIndex {
+                    // User is scrolling to the last cell, load more data
+            seriesViewModel.getMoreSeries(offset: seriesViewModel.currentoffset + 1, limit: seriesViewModel.itemsPerPage)
+                }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

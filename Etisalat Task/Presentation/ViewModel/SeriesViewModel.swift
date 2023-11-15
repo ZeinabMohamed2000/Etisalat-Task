@@ -11,6 +11,9 @@ class SeriesViewModel{
     var searchedSeries: [Series]?
     var seriesArr: [Series]?
     
+    let itemsPerPage = 15
+    var currentoffset = 0
+    
     var bindingSeriesToController: (() -> ()) = {}
     var retreivedSeries: [Series] = [] {
         didSet {
@@ -18,12 +21,20 @@ class SeriesViewModel{
         }
     }
     private var seriesNetworkObj: SeriesServiceClass = SeriesServiceClass()
-    
-    func getSeries() {
-        seriesNetworkObj.fetchSeries { seriesModel in
-            self.retreivedSeries = seriesModel?.data.results ?? []
+
+    func getMoreSeries(offset: Int, limit: Int) {
+        seriesNetworkObj.fetchSeries(offset: offset, limit: limit) { seriesModel in
+            switch seriesModel {
+            case .success(let series):
+                self.retreivedSeries += series.data.results
+            case .failure(_):
+                print("error")
+            }
+            
         }
     }
+    
+   
     
 }
 
