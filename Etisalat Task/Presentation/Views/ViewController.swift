@@ -8,12 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var searchBar: UISearchBar!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var seriesCollectionView: UICollectionView!
-    let names = ["Zeinab" , "Salma" , "Habiba" , "Aya" , "Sara" , "Fatma" , "Omar"]
-    var searchedNames : [String]?
+    var seriesViewModel = SeriesViewModel ()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,24 +23,34 @@ class ViewController: UIViewController {
         
         let nib = UINib(nibName: "SeriesCollectionViewCell", bundle: nil)
         seriesCollectionView.register(nib, forCellWithReuseIdentifier: "seriesCell")
+        
+        seriesViewModel.getSeries()
+        seriesViewModel.bindingSeriesToController = {
+            DispatchQueue.main.async {
+                self.seriesViewModel.seriesArr = self.seriesViewModel.retreivedSeries
+                self.seriesViewModel.searchedSeries = self.seriesViewModel.seriesArr
+                self.seriesCollectionView.reloadData()
+            }
+        }
     }
-
-
 }
+
 
 extension ViewController: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        searchedNames = []
+        seriesViewModel.searchedSeries = []
         if searchText == "" {
-            searchedNames = names
+            seriesViewModel.searchedSeries = seriesViewModel.seriesArr
         }
         
-        for letter in names {
-            if letter.uppercased().contains(searchText.uppercased()) {
-                searchedNames?.append(letter)
+        for series in seriesViewModel.seriesArr ?? [] {
+            if (series.title?.uppercased() ?? "").contains(searchText.uppercased()) {
+                seriesViewModel.searchedSeries?.append(series)
             }
         }
+        
+        seriesCollectionView.reloadData()
     }
 }
 
@@ -51,16 +59,16 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return seriesViewModel.searchedSeries?.count ?? 0
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "seriesCell", for: indexPath) as! SeriesCollectionViewCell
         
-        cell.seriesName.text = "any movie"
-        cell.seriesRate.text = "10"
-        cell.seriesYear.text = "1999"
+        cell.seriesName.text = seriesViewModel.searchedSeries?[indexPath.row].title
+        cell.seriesRate.text = (seriesViewModel.searchedSeries?[indexPath.row].rating == "") ? "-" : seriesViewModel.searchedSeries?[indexPath.row].rating
+        cell.seriesYear.text = "\(seriesViewModel.searchedSeries?[indexPath.row].startYear ?? 0)"
         
         
         return cell
