@@ -20,6 +20,7 @@
 		3D2DD2102B04365F008D0389 /* SeriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD20E2B04365F008D0389 /* SeriesCollectionViewCell.swift */; };
 		3D2DD2112B04365F008D0389 /* SeriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DD20F2B04365F008D0389 /* SeriesCollectionViewCell.xib */; };
 		3D2DD2142B04438D008D0389 /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD2132B04438D008D0389 /* SeriesModel.swift */; };
+		3D2DD2172B044516008D0389 /* SeriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD2162B044516008D0389 /* SeriesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		3D2DD20E2B04365F008D0389 /* SeriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D2DD20F2B04365F008D0389 /* SeriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D2DD2132B04438D008D0389 /* SeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesModel.swift; sourceTree = "<group>"; };
+		3D2DD2162B044516008D0389 /* SeriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		3D2DD2082B0422A1008D0389 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3D2DD2152B0444E8008D0389 /* Network Services */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -193,6 +196,14 @@
 				3D2DD2132B04438D008D0389 /* SeriesModel.swift */,
 			);
 			path = Entites;
+			sourceTree = "<group>";
+		};
+		3D2DD2152B0444E8008D0389 /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				3D2DD2162B044516008D0389 /* SeriesService.swift */,
+			);
+			path = "Network Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2DD2142B04438D008D0389 /* SeriesModel.swift in Sources */,
+				3D2DD2172B044516008D0389 /* SeriesService.swift in Sources */,
 				3D2DD1DA2B042295008D0389 /* ViewController.swift in Sources */,
 				3D2DD1D62B042295008D0389 /* AppDelegate.swift in Sources */,
 				3D2DD1D82B042295008D0389 /* SceneDelegate.swift in Sources */,
