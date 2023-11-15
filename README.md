@@ -11,7 +11,7 @@
 
 - Swift programming language
 - UIKit framework
-- IMDb API
+- Marvel API
 
 ## How To Use
 
