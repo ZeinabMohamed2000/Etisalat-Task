@@ -17,6 +17,8 @@
 		3D2DD1F02B042298008D0389 /* Etisalat_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1EF2B042298008D0389 /* Etisalat_TaskTests.swift */; };
 		3D2DD1FA2B042298008D0389 /* Etisalat_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1F92B042298008D0389 /* Etisalat_TaskUITests.swift */; };
 		3D2DD1FC2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1FB2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift */; };
+		3D2DD2102B04365F008D0389 /* SeriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD20E2B04365F008D0389 /* SeriesCollectionViewCell.swift */; };
+		3D2DD2112B04365F008D0389 /* SeriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DD20F2B04365F008D0389 /* SeriesCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3D2DD1F52B042298008D0389 /* Etisalat TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Etisalat TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2DD1F92B042298008D0389 /* Etisalat_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etisalat_TaskUITests.swift; sourceTree = "<group>"; };
 		3D2DD1FB2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etisalat_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D2DD20E2B04365F008D0389 /* SeriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D2DD20F2B04365F008D0389 /* SeriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,8 @@
 				3D2DD1D92B042295008D0389 /* ViewController.swift */,
 				3D2DD1E32B042297008D0389 /* LaunchScreen.storyboard */,
 				3D2DD1DB2B042295008D0389 /* Main.storyboard */,
+				3D2DD20E2B04365F008D0389 /* SeriesCollectionViewCell.swift */,
+				3D2DD20F2B04365F008D0389 /* SeriesCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 				3D2DD1E52B042297008D0389 /* LaunchScreen.storyboard in Resources */,
 				3D2DD1E22B042297008D0389 /* Assets.xcassets in Resources */,
 				3D2DD1DD2B042295008D0389 /* Main.storyboard in Resources */,
+				3D2DD2112B04365F008D0389 /* SeriesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +320,7 @@
 				3D2DD1D62B042295008D0389 /* AppDelegate.swift in Sources */,
 				3D2DD1D82B042295008D0389 /* SceneDelegate.swift in Sources */,
 				3D2DD1E02B042295008D0389 /* Etisalat_Task.xcdatamodeld in Sources */,
+				3D2DD2102B04365F008D0389 /* SeriesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
