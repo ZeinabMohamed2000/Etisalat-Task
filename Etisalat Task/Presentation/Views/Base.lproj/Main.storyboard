@@ -27,36 +27,29 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="HBP-ou-QFL"/>
                                 </connections>
                             </searchBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-N0-zPk">
-                                <rect key="frame" x="8" y="136" width="377" height="666"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J0P-de-a8e">
+                                <rect key="frame" x="8" y="128" width="377" height="682"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="1" minimumInteritemSpacing="1" id="ltb-VS-UQ9">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
                                 <connections>
-                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="QGe-av-9FF"/>
-                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="7Yn-Cu-WP1"/>
+                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="eav-ED-xyN"/>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="DIO-33-r9M"/>
                                 </connections>
-                            </collectionView>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YEs-N0-zPk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="E1K-0X-kry"/>
-                            <constraint firstItem="YEs-N0-zPk" firstAttribute="top" secondItem="mir-vp-JGD" secondAttribute="bottom" constant="16" id="Ltf-Pu-Q3R"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YEs-N0-zPk" secondAttribute="bottom" constant="16" id="QYJ-Hq-Szy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YEs-N0-zPk" secondAttribute="trailing" constant="8" id="Y3w-JM-dur"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J0P-de-a8e" secondAttribute="bottom" constant="8" id="65c-XF-A0R"/>
+                            <constraint firstItem="J0P-de-a8e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="8VK-H8-ag3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J0P-de-a8e" secondAttribute="trailing" constant="8" id="dBc-K4-tnR"/>
                             <constraint firstItem="mir-vp-JGD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="k2s-hd-0xR"/>
+                            <constraint firstItem="J0P-de-a8e" firstAttribute="top" secondItem="mir-vp-JGD" secondAttribute="bottom" constant="8" id="scJ-nI-27H"/>
                             <constraint firstItem="mir-vp-JGD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="xem-c7-bJ8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="mir-vp-JGD" id="AM1-0A-PXc"/>
-                        <outlet property="seriesCollectionView" destination="YEs-N0-zPk" id="ERk-nG-mHM"/>
+                        <outlet property="seriesTableView" destination="J0P-de-a8e" id="khA-V1-tu4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

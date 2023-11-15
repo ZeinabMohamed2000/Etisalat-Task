@@ -1,17 +1,14 @@
 //
-//  SeriesCollectionViewCell.swift
+//  SeriesCustomCell.swift
 //  Etisalat Task
 //
-//  Created by Zeinab on 14/11/2023.
+//  Created by Zeinab on 15/11/2023.
 //
 
 import UIKit
 
-class SeriesCollectionViewCell: UICollectionViewCell {
-
-    
-    @IBOutlet weak var seriesView: UIView!
-    {
+class SeriesCustomCell: UITableViewCell {
+    @IBOutlet weak var seriesView: UIView!{
         didSet{
             seriesView.layer.cornerRadius = 20
             seriesView.backgroundColor = .white
@@ -20,13 +17,21 @@ class SeriesCollectionViewCell: UICollectionViewCell {
             seriesView.layer.shadowOpacity = 0.5
         }
     }
+    
     @IBOutlet weak var seriesImg: UIImageView!
     @IBOutlet weak var seriesName: UILabel!
-    @IBOutlet weak var seriesRate: UILabel!
     @IBOutlet weak var seriesYear: UILabel!
+    @IBOutlet weak var seriesRate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
 }

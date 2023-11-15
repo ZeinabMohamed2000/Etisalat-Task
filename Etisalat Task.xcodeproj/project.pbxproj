@@ -17,12 +17,12 @@
 		3D2DD1F02B042298008D0389 /* Etisalat_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1EF2B042298008D0389 /* Etisalat_TaskTests.swift */; };
 		3D2DD1FA2B042298008D0389 /* Etisalat_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1F92B042298008D0389 /* Etisalat_TaskUITests.swift */; };
 		3D2DD1FC2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD1FB2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift */; };
-		3D2DD2102B04365F008D0389 /* SeriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD20E2B04365F008D0389 /* SeriesCollectionViewCell.swift */; };
-		3D2DD2112B04365F008D0389 /* SeriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DD20F2B04365F008D0389 /* SeriesCollectionViewCell.xib */; };
 		3D2DD2142B04438D008D0389 /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD2132B04438D008D0389 /* SeriesModel.swift */; };
 		3D2DD2172B044516008D0389 /* SeriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD2162B044516008D0389 /* SeriesService.swift */; };
 		3D2DD2192B04475B008D0389 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD2182B04475B008D0389 /* CoreDataManager.swift */; };
 		3D2DD21D2B044DD8008D0389 /* SeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DD21C2B044DD7008D0389 /* SeriesViewModel.swift */; };
+		3D952B8A2B054D2400393A98 /* SeriesCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D952B882B054D2400393A98 /* SeriesCustomCell.swift */; };
+		3D952B8B2B054D2400393A98 /* SeriesCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D952B892B054D2400393A98 /* SeriesCustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +57,12 @@
 		3D2DD1F52B042298008D0389 /* Etisalat TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Etisalat TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2DD1F92B042298008D0389 /* Etisalat_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etisalat_TaskUITests.swift; sourceTree = "<group>"; };
 		3D2DD1FB2B042298008D0389 /* Etisalat_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etisalat_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3D2DD20E2B04365F008D0389 /* SeriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCollectionViewCell.swift; sourceTree = "<group>"; };
-		3D2DD20F2B04365F008D0389 /* SeriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D2DD2132B04438D008D0389 /* SeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesModel.swift; sourceTree = "<group>"; };
 		3D2DD2162B044516008D0389 /* SeriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesService.swift; sourceTree = "<group>"; };
 		3D2DD2182B04475B008D0389 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		3D2DD21C2B044DD7008D0389 /* SeriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesViewModel.swift; sourceTree = "<group>"; };
+		3D952B882B054D2400393A98 /* SeriesCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCustomCell.swift; sourceTree = "<group>"; };
+		3D952B892B054D2400393A98 /* SeriesCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesCustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,8 +190,8 @@
 				3D2DD1D92B042295008D0389 /* ViewController.swift */,
 				3D2DD1E32B042297008D0389 /* LaunchScreen.storyboard */,
 				3D2DD1DB2B042295008D0389 /* Main.storyboard */,
-				3D2DD20E2B04365F008D0389 /* SeriesCollectionViewCell.swift */,
-				3D2DD20F2B04365F008D0389 /* SeriesCollectionViewCell.xib */,
+				3D952B882B054D2400393A98 /* SeriesCustomCell.swift */,
+				3D952B892B054D2400393A98 /* SeriesCustomCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 				3D2DD1E52B042297008D0389 /* LaunchScreen.storyboard in Resources */,
 				3D2DD1E22B042297008D0389 /* Assets.xcassets in Resources */,
 				3D2DD1DD2B042295008D0389 /* Main.storyboard in Resources */,
-				3D2DD2112B04365F008D0389 /* SeriesCollectionViewCell.xib in Resources */,
+				3D952B8B2B054D2400393A98 /* SeriesCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2DD2142B04438D008D0389 /* SeriesModel.swift in Sources */,
+				3D952B8A2B054D2400393A98 /* SeriesCustomCell.swift in Sources */,
 				3D2DD2172B044516008D0389 /* SeriesService.swift in Sources */,
 				3D2DD1DA2B042295008D0389 /* ViewController.swift in Sources */,
 				3D2DD21D2B044DD8008D0389 /* SeriesViewModel.swift in Sources */,
@@ -360,7 +361,6 @@
 				3D2DD1D82B042295008D0389 /* SceneDelegate.swift in Sources */,
 				3D2DD1E02B042295008D0389 /* Etisalat_Task.xcdatamodeld in Sources */,
 				3D2DD2192B04475B008D0389 /* CoreDataManager.swift in Sources */,
-				3D2DD2102B04365F008D0389 /* SeriesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
