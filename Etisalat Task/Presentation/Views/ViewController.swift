@@ -6,26 +6,34 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
     @IBOutlet weak var seriesTableView: UITableView!
-    var seriesViewModel = SeriesViewModel ()
+    var seriesViewModel = SeriesNetworkViewModel ()
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUp()
+        
+        getdata()
+    }
+    
+    func setUp(){
         searchBar.delegate = self
         searchBar.layer.cornerRadius = 10
-        
         seriesTableView.dataSource = self
         seriesTableView.delegate = self
         
         let nib = UINib(nibName: "SeriesCustomCell", bundle: nil)
         seriesTableView.register(nib, forCellReuseIdentifier: "seriesCell")
         
-        
+    }
+    
+    func getdata(){
         seriesViewModel.getMoreSeries(offset: seriesViewModel.currentoffset, limit: seriesViewModel.itemsPerPage)
         seriesViewModel.bindingSeriesToController = {
             DispatchQueue.main.async {
@@ -45,9 +53,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "seriesCell", for: indexPath) as! SeriesCustomCell
         
-        cell.seriesName.text = seriesViewModel.searchedSeries?[indexPath.row].title
-        cell.seriesRate.text = (seriesViewModel.searchedSeries?[indexPath.row].rating == "") ? "-" : seriesViewModel.searchedSeries?[indexPath.row].rating
-        cell.seriesYear.text = "\(seriesViewModel.searchedSeries?[indexPath.row].startYear ?? 0)"
+        let series = seriesViewModel.searchedSeries?[indexPath.row]
+        cell.configure(title: series?.title ?? "", url: "https://mpc-pharma.com/admin/images/NOVA4_1674558666_87135319.png" , rate: (((series?.rating == "") ?  "-" : series?.rating) ??  ""), year: series?.startYear ?? 0, description: (((series?.description == nil) ?  "-" : series?.description) ??  ""), type: (((series?.type == "") ?  "-" : series?.type) ??  ""))
+
+       
         
         
         return cell
@@ -59,18 +68,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                     }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return UITableView.automaticDimension
     }
-    
-    
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell: SeriesCustomCell = tableView.cellForRow(at: indexPath) as! SeriesCustomCell
+        cell.isExpanded.toggle()
+        
+    }
 }
-
 
 extension ViewController: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
         seriesViewModel.searchedSeries = []
         if searchText == "" {
             seriesViewModel.searchedSeries = seriesViewModel.seriesArr
@@ -85,24 +93,3 @@ extension ViewController: UISearchBarDelegate{
         seriesTableView.reloadData()
     }
 }
-
-//extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        let lastItemIndex = collectionView.numberOfItems(inSection: 0) - 1
-//        
-//        if indexPath.item == lastItemIndex {
-//                    // User is scrolling to the last cell, load more data
-//            seriesViewModel.getMoreSeries(offset: seriesViewModel.currentoffset + 1, limit: seriesViewModel.itemsPerPage)
-//                }
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//       
-//        return CGSize(width: (UIScreen.main.bounds.size.width/2) - 10, height: (UIScreen.main.bounds.size.height/5) - 10)
-//       
-//    }
-//    
-//    
-//}
-

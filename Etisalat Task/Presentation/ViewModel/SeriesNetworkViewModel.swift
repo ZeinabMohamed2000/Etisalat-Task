@@ -1,15 +1,17 @@
 //
-//  SeriesViewModel.swift
+//  SeriesNetworkViewModel.swift
 //  Etisalat Task
 //
 //  Created by Zeinab on 14/11/2023.
 //
 
 import Foundation
-class SeriesViewModel{
+import CoreData
+class SeriesNetworkViewModel{
     
     var searchedSeries: [Series]?
     var seriesArr: [Series]?
+    let userDefaults = UserDefaults.standard
     
     let itemsPerPage = 15
     var currentoffset = 0
@@ -20,6 +22,8 @@ class SeriesViewModel{
             bindingSeriesToController()
         }
     }
+    
+
     private var seriesNetworkObj: SeriesServiceClass = SeriesServiceClass()
 
     func getMoreSeries(offset: Int, limit: Int) {
@@ -33,8 +37,19 @@ class SeriesViewModel{
             
         }
     }
+}
+
+class SeriesCoreDataViewModel{
     
-   
+    var seriesCoreDataArray: [NSManagedObject] = []
+    var coreDataobj = CoreDataManager.getInstance()
+    func saveSeriesToCoreData(series: Series){
+        coreDataobj.saveToCoreData(series: series)
+    }
+    
+    func fetchSeriesFromCoreData() -> [NSManagedObject]{
+        return coreDataobj.fetchFromCoreData()
+    }
     
 }
 

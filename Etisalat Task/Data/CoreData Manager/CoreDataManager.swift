@@ -33,10 +33,8 @@ class CoreDataManager{
     
     func saveToCoreData(series: Series){
         let savedSeries = NSManagedObject(entity: entity!, insertInto: managedContext)
-        savedSeries.setValue(series.title, forKey: "title")
-        savedSeries.setValue(series.startYear, forKey: "year")
-        savedSeries.setValue(series.rating, forKey: "rating")
-        
+        savedSeries.setValue(series.description, forKey: "desc")
+        savedSeries.setValue(series.type, forKey: "type")
         do{
             try managedContext.save()
         }catch let error {
