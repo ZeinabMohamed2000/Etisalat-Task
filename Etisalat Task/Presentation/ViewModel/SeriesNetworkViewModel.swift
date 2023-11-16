@@ -41,14 +41,16 @@ class SeriesNetworkViewModel{
 
 class SeriesCoreDataViewModel{
     
+    var userDefaults = UserDefaults.standard
+    var flag = 0
     var seriesCoreDataArray: [NSManagedObject] = []
     var coreDataobj = CoreDataManager.getInstance()
     func saveSeriesToCoreData(series: Series){
         coreDataobj.saveToCoreData(series: series)
     }
     
-    func fetchSeriesFromCoreData() -> [NSManagedObject]{
-        return coreDataobj.fetchFromCoreData()
+    func fetchSeriesFromCoreData(seriesId:Int) -> [NSManagedObject]{
+        return coreDataobj.fetchFromCoreData(seriesId: seriesId)
     }
     
 }

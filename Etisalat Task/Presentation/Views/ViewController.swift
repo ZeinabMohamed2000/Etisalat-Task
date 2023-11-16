@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Kingfisher
+
 
 class ViewController: UIViewController {
     
@@ -16,9 +16,8 @@ class ViewController: UIViewController {
     var seriesViewModel = SeriesNetworkViewModel ()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         setUp()
-        
         getdata()
     }
     
@@ -52,28 +51,26 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "seriesCell", for: indexPath) as! SeriesCustomCell
-        
         let series = seriesViewModel.searchedSeries?[indexPath.row]
         cell.configure(title: series?.title ?? "", url: "https://mpc-pharma.com/admin/images/NOVA4_1674558666_87135319.png" , rate: (((series?.rating == "") ?  "-" : series?.rating) ??  ""), year: series?.startYear ?? 0, description: (((series?.description == nil) ?  "-" : series?.description) ??  ""), type: (((series?.type == "") ?  "-" : series?.type) ??  ""))
-
-       
-        
-        
+            
         return cell
     }
+    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.item == (seriesViewModel.seriesArr?.count ?? 0) - 1 {
             // User is scrolling to the last cell, load more data
             seriesViewModel.getMoreSeries(offset: seriesViewModel.currentoffset + 1, limit: seriesViewModel.itemsPerPage)
                     }
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell: SeriesCustomCell = tableView.cellForRow(at: indexPath) as! SeriesCustomCell
         cell.isExpanded.toggle()
-        
     }
 }
 
@@ -89,7 +86,6 @@ extension ViewController: UISearchBarDelegate{
                 seriesViewModel.searchedSeries?.append(series)
             }
         }
-        
         seriesTableView.reloadData()
     }
 }

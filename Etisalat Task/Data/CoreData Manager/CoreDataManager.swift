@@ -33,6 +33,7 @@ class CoreDataManager{
     
     func saveToCoreData(series: Series){
         let savedSeries = NSManagedObject(entity: entity!, insertInto: managedContext)
+        savedSeries.setValue(series.id, forKey: "id")
         savedSeries.setValue(series.description, forKey: "desc")
         savedSeries.setValue(series.type, forKey: "type")
         do{
@@ -41,12 +42,14 @@ class CoreDataManager{
             print (error)
         }
     }
-    func fetchFromCoreData() -> [NSManagedObject]{
+    func fetchFromCoreData(seriesId: Int) -> [NSManagedObject]{
         var seriesFromCoreData : [NSManagedObject]!
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "CoreDataSeries")
         
         do{
+            let predicate = NSPredicate(format: "id == %@", seriesId)
+            fetchRequest.predicate = predicate
             seriesFromCoreData = try self.managedContext.fetch(fetchRequest)
            
         } catch let error {
